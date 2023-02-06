@@ -1,0 +1,190 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+// Все сховати
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+// Тінь великих картинок
+
+.shadow-big {
+    background: getColor('bcg-img');
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: 1024px) {
+        background: getColor('bcg-img');
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
+}
+
+// Тінь маленьких картинок
+
+.shadow-little {
+    background: getColor('bcg-img');
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+}
+
+// Cтиль основних кнопок 
+
+.btn-main {
+    background: getColor('black');
+    border: 2px solid getColor('white');
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: getColor('yellow');
+    width: 232px;
+    height: 48px;
+    text-align: center;
+}
+
+// Ховер і фокус основних кнопок та disable
+.btn-main:hover,
+.btn-main:focus,
+.btn-disabled:hover,
+.btn-disabled:focus {
+    background: getColor('white');
+    border: 2px solid getColor('yellow');
+}
+
+// Стиль кнопки disabled
+.btn-disabled {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid getColor('white');
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: getColor('yellow');
+    width: 232px;
+    height: 48px;
+    text-align: center;
+    cursor: pointer;
+}
+
+// Ліва кнопка, розміром 236 пікс
+.btn-big {
+    width: 236px;
+}
+
+// Кнопка бронювання кімнати
+.btn-book {
+    background: getColor('black');
+    border: 1px solid var(--akzent-yellow);
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--white);
+    width: 434px;
+    height: 65px;
+    text-align: center;
+    cursor: pointer;
+
+    @media screen and (max-width: 1023px) {
+        font-size: 20px;
+        width: 384px;
+        height: 64px;
+    }
+}
+
+// Ховер і фокус
+
+.btn-book:hover,
+.btn-book:focus {
+    color: var(--black);
+    background: var(--akzent-yellow);
+    border: 1px solid var(--akzent-yellow);
+}
+
+.btn-main,
+.btn-disabled,
+.btn-book,
+.every-arrow {
+    transition: 
+        color 250ms cubic-bezier(var(--cubic)),
+        background-color 250ms cubic-bezier(var(--cubic)),
+        border 250ms cubic-bezier(var(--cubic)),
+        opacity 250ms cubic-bezier(var(--cubic));
+}
+
+// Modal windows & overlay base
+
+.container-backdrop {
+    visibility: hidden;
+    position: fixed;
+    z-index: 450;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+    overflow-y: scroll;
+    opacity: 1;
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(3px);
+    z-index: 440;
+    transition: .3s all;
+    overflow-y: scroll;
+    pointer-events: none;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: 0.3s all;
+    pointer-events: none;
+}
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    fill: var(--black);
+    cursor: pointer;
+}
