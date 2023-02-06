@@ -2,20 +2,20 @@
   "name": "mimino-team",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://paladin3x.github.io/mimino-project-fs77/",
+  "homepage": "https://paladin3x.github.io/paladin3x-mimino/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /mimino-project-fs77/"
+    "build": "parcel build src/*.html --public-url /paladin3x-mimino/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/paladin3x/mimino-project-fs77.git"
+    "url": "git+https://github.com/paladin3x/paladin3x-mimino.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/paladin3x/mimino-project-fs77/issues"
+    "url": "https://github.com/paladin3x/paladin3x-mimino/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0",
