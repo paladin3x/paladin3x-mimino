@@ -12,6 +12,7 @@ a {
 
 .footer {
     background-color: var(--color-footer);
+    position: relative;
 }
 
 .footer__body {
@@ -112,7 +113,7 @@ a {
     @media screen and (min-width:1024px) {
         display: flex;
         justify-content: space-between;
-        
+
         font-family: 'Montserrat';
         font-size: 16px;
         font-weight: 400;
@@ -126,4 +127,33 @@ a {
     width: 24px;
     height: 24px;
     fill: var(--akzent-yellow);
+}
+
+.footer-up-site {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+
+    @media screen and (max-width:560px) {
+        display: none;
+    }
+}
+
+.up-site {
+    line-height: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.svg-fupsite {
+    width: 40px;
+    height: 40px;
+    fill: getColor('yellow');
+    cursor: pointer;
+}
+
+.svg-fupsite:focus,
+.svg-fupsite:hover {
+    fill:white;
 }
