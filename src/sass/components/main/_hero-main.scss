@@ -215,6 +215,13 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     }
 }
 
+.location-address:focus,
+.location-address:hover {
+    // background: linear-gradient(45deg, #90f141, #7acb37);
+    box-shadow: -16px -16px 19px #837415,
+        16px 16px 19px #fff22d;
+}
+
 .hm_sociallink {
     line-height: 0;
 }
@@ -266,7 +273,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
         align-items: baseline;
     }
 
-    @media screen and(min-width:1280px) {
+    @media screen and (min-width:1280px) {
         display: flex;
         flex-direction: row;
         align-items: flex-end;

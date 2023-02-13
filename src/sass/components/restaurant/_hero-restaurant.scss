@@ -233,9 +233,15 @@ html {
     }
 }
 
+.hero-address:focus,
+.hero-address:hover {
+    box-shadow: -16px -16px 19px #837415,
+        16px 16px 19px #fff22d;
+}
+
 .hr_container {
     position: relative;
-    overflow: hidden;
+
 }
 
 .address-map {
@@ -257,6 +263,7 @@ html {
 
 .btn-disabled.second {
     display: none;
+
     @media screen and (min-width: 1024px) {
         display: flex;
         align-items: center;
