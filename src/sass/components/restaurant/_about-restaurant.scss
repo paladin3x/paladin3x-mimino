@@ -5,7 +5,7 @@
 
     @media screen and (min-width: 1024px) {
         padding-top: 120px;
-        padding-bottom: 32px;   
+        padding-bottom: 32px;
     }
 
 }
@@ -36,7 +36,7 @@
     letter-spacing: 0.3em;
     color: var(--gray2);
     margin-bottom: 12px;
-    
+
     @media screen and (min-width: 1024px) {
         font-size: 64px;
         line-height: 1.07;
@@ -50,7 +50,7 @@
     font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color:var(--gray-room);
+    color: var(--gray-room);
     max-width: 258px;
     margin-bottom: 28px;
 
@@ -78,7 +78,7 @@
     @media screen and (min-width: 1024px) {
         font-size: 16px;
     }
-    
+
 }
 
 
@@ -152,7 +152,7 @@
     margin-left: 70px;
     margin-bottom: 20px;
     column-gap: 24px;
-    
+
     @media screen and (min-width: 1024px) {
         position: relative;
         justify-content: flex-end;
@@ -169,12 +169,12 @@
 .img1-slider {
     width: 245px;
     max-width: fit-content;
-    
+
     @media screen and (min-width: 1024px) {
         width: auto;
         min-width: 194px;
     }
-    
+
     @media screen and (min-width: 1280px) {
         min-width: 254px;
     }
@@ -186,6 +186,7 @@
 
 .picture-cutted {
     display: block;
+
     @media screen and (max-width: 1023px) {
         width: 60px;
         overflow: hidden;
@@ -227,4 +228,28 @@
 
 }
 
+.button-box-slider-restaurant {
+    display: flex;
+    gap: 32px;
+    justify-content: end;
+    margin-top: 20px;
+    max-width: 330px;
+}
 
+.swiper-wrapper-restaurant {
+    // gap: 20px;
+
+    position: relative;
+    gap: 20px;
+}
+
+.swiper-slide-restaurant {
+    flex-shrink: unset;
+    max-width: 254px;
+}
+
+.swiper-restaurant {
+    overflow: hidden;
+    margin-left: 84px;
+    background: none;
+}

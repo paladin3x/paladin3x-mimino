@@ -7,11 +7,14 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
 // init Swiper:
-const swiper = new Swiper('.swiper-hero', {
+const swiper = new Swiper('.swiper-hero, .swiper-restaurant', {
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next, .every-arrow-prev',
+    prevEl: '.swiper-button-prev, .every-arrow-next',
   },
 });
+
+
+

@@ -687,6 +687,11 @@ address {
   }
 }
 
+.location-address:focus,
+.location-address:hover {
+  box-shadow: -16px -16px 19px #837415, 16px 16px 19px #fff22d;
+}
+
 .hm_sociallink {
   line-height: 0;
 }
@@ -1221,7 +1226,6 @@ address {
 .icon-arrow-left,
 .icon-arrow-right {
   fill: currentColor;
-  color: var(--white);
 }
 
 .icon-rest-arrow {
@@ -2500,9 +2504,13 @@ html {
   }
 }
 
+.hero-address:focus,
+.hero-address:hover {
+  box-shadow: -16px -16px 19px #837415, 16px 16px 19px #fff22d;
+}
+
 .hr_container {
   position: relative;
-  overflow: hidden;
 }
 
 .address-map {
@@ -2797,6 +2805,30 @@ html {
     position: relative;
   }
 }
+.button-box-slider-restaurant {
+  display: flex;
+  gap: 32px;
+  justify-content: end;
+  margin-top: 20px;
+  max-width: 330px;
+}
+
+.swiper-wrapper-restaurant {
+  position: relative;
+  gap: 20px;
+}
+
+.swiper-slide-restaurant {
+  flex-shrink: unset;
+  max-width: 254px;
+}
+
+.swiper-restaurant {
+  overflow: hidden;
+  margin-left: 84px;
+  background: none;
+}
+
 .menu-section {
   background-color: var(--fon-lemon);
   padding-top: 32px;
@@ -3047,6 +3079,11 @@ td {
   align-items: center;
   display: flex;
   bottom: 20px;
+}
+
+.adress-hotel:focus,
+.adress-hotel:hover {
+  box-shadow: -16px -16px 19px #837415, 16px 16px 19px #fff22d;
 }
 
 .adress-hotel-text {
