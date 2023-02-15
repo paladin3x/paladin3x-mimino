@@ -51,6 +51,10 @@
     width: 232px;
     height: 48px;
     text-align: center;
+
+    @media screen and (max-width: 1023px) {
+        max-width: 232px;
+    }
 }
 
 // Ховер і фокус основних кнопок та disable
@@ -78,11 +82,15 @@
     height: 48px;
     text-align: center;
     cursor: pointer;
+
+    @media screen and (max-width: 1023px) {
+        max-width: 232px;
+    }
 }
 
 // Ліва кнопка, розміром 236 пікс
 .btn-big {
-    width: 236px;
+    max-width: 236px;
 }
 
 // Кнопка бронювання кімнати
@@ -122,7 +130,7 @@
 .btn-disabled,
 .btn-book,
 .every-arrow {
-    transition: 
+    transition:
         color 250ms cubic-bezier(var(--cubic)),
         background-color 250ms cubic-bezier(var(--cubic)),
         border 250ms cubic-bezier(var(--cubic)),

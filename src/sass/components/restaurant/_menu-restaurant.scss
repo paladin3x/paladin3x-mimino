@@ -101,7 +101,7 @@ td {
     color: #000000;
     margin-top: 4px; 
     margin-bottom: 8px;
-    width: 225px;
+    max-width: 225px;
 
     @media screen and (min-width: 1024px) {
         margin-bottom: 8px;
