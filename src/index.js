@@ -30,9 +30,10 @@ const swiper1 = new Swiper2('.swiper-restaurant', {
     prevEl: '.every-arrow-next',
   },
 
-  spaceBetween: 20,
+  freeMode: true,
   slidesPerView: 1.2,
-  speed: 500,
+
+  speed: 200,
 });
 
 

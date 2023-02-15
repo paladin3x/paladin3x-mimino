@@ -167,11 +167,11 @@
 }
 
 .img1-slider {
-    width: 245px;
-    max-width: fit-content;
+    min-width: 245px;
+
 
     @media screen and (min-width: 1024px) {
-        width: auto;
+
         min-width: 194px;
     }
 
@@ -234,21 +234,55 @@
     justify-content: end;
     margin-top: 20px;
     max-width: 330px;
+
+    @media screen and (min-width:1024px) {
+        max-width: 1280px;
+        margin-top: 32px;
+        margin-right: 15px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-right: 0;
+        margin-top: 40px;
+    }
 }
 
 .swiper-wrapper-restaurant {
     // gap: 20px;
 
     position: relative;
+    gap: 20px;
+
+    @media screen and (min-width:1024px) {
+        gap: 40px;
+    }
 }
 
 .swiper-slide-restaurant {
 
     max-width: 254px;
+
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        max-width: 194px;
+
+    }
 }
 
 .swiper-restaurant {
     overflow: hidden;
     margin-left: 84px;
     background: none;
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        max-width: 424px;
+        margin-left: auto;
+        margin-right: 13px;
+    }
+
+    @media screen and (min-width:1280px) {
+        max-width: 547px;
+        margin-left: auto;
+
+    }
 }
