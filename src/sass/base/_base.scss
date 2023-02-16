@@ -55,21 +55,24 @@ address {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+
     @media screen and (min-width: 414px) {
-            width: 414px;
+        width: 414px;
     }
+
     @media screen and (min-width: 1024px) {
-            width: 1024px;
-            padding-left: 47px;
-            padding-right: 47px;
+        width: 1024px;
+        padding-left: 47px;
+        padding-right: 47px;
     }
+
     @media screen and (min-width: 1280px) {
-            width: 1280px;
-            padding-left: 85px;
-            padding-right: 85px;
+        width: 1280px;
+        padding-left: 85px;
+        padding-right: 85px;
     }
 }
 
 .sec-tion {
-    // max-width: 1600px;
+    // overflow: hidden;
 }
