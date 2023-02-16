@@ -56,7 +56,7 @@ const swiper3 = new Swiper3('.swiper__hotel', {
       slidesPerView: 1.2,
     },
     1024: {
-      slidesPerView: 2.
+      slidesPerView: 2,
     }
   },
  
