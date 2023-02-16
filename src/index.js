@@ -1,19 +1,19 @@
 import './js/modal'
-import Swiper1, { Navigation } from 'swiper';
+import SwiperHeroHotel, { Navigation } from 'swiper';
 import Swiper2, { Navigation } from 'swiper';
 import Swiper3, { Navigation } from 'swiper';
 // import styles bundle
 
 // configure Swiper to use modules
-Swiper1.use([Navigation]);
+SwiperHeroHotel.use([Navigation]);
 
 // init Swiper:
-const swiper = new Swiper1('.swiper-hero', {
+const swiper = new SwiperHeroHotel('.swiper-hero', {
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next, .every-arrow-prev',
-    prevEl: '.swiper-button-prev, .every-arrow-next',
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   slidesPerView: 1,
@@ -22,7 +22,7 @@ const swiper = new Swiper1('.swiper-hero', {
 Swiper2.use([Navigation]);
 
 // init Swiper:
-const swiper1 = new Swiper2('.swiper-restaurant', {
+const swiperRestaurant = new Swiper2('.swiper-restaurant', {
   loop: true,
   // Navigation arrows
   navigation: {
@@ -36,36 +36,39 @@ const swiper1 = new Swiper2('.swiper-restaurant', {
   speed: 200,
 
   lazy: {
-    loadPrevNext:true,
+    loadPrevNext: true,
   },
 });
 
 Swiper3.use([Navigation]);
 
 // init Swiper:
-const swiper3 = new Swiper3('.swiper__hotel', {
+const swiperHotel = new Swiper3('.swiper-hotel', {
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.every-arrow-prev-hotel',
-    prevEl: '.every-arrow-next-hotel',
+    nextEl: '.every-arrow-next-hotel',
+    prevEl: '.every-arrow-prev-hotel',
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.3,
+
+    },
+    1023: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
   },
 
-  breakpoints: {
-    300: {
-      slidesPerView: 1.2,
-    },
-    1024: {
-      slidesPerView: 2,
-    }
-  },
- 
   speed: 200,
 
   lazy: {
     loadPrevNext: true,
   },
 });
+
+
 
 
 

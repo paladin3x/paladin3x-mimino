@@ -236,16 +236,18 @@
 }
 
 .block-tablet {
+    display: flex;
+    flex-direction: column;
+
+
     @media screen and (min-width: 1024px) {
         display: flex;
-        gap: 266px;
+
         flex-direction: row-reverse;
-        justify-content: right;
+        justify-content: space-between;
     }
 
-    @media screen and (min-width: 1280px) {
-        gap: 326px;
-    }
+    @media screen and (min-width: 1280px) {}
 }
 
 // Список кнопок
@@ -271,5 +273,56 @@
 
     @media screen and (min-width: 1280px) {
         padding-top: 72px;
+    }
+}
+
+.swiper-hotel {
+    width: 272px;
+    margin-left: 115px;
+    overflow: hidden;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    background: none;
+
+    @media screen and (min-width:1024px) {
+        width: 428px;
+        margin-left: 0;
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 548px;
+    }
+}
+
+.hotel-swiper-btn-box {
+    display: flex;
+    gap: 32px;
+    justify-content: end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width:1024px) {
+        justify-content: start;
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-top: 40px;
+    }
+}
+
+.img-slider-hotel {
+    max-width: 194px;
+
+    @media screen and (min-width:1280px) {
+        min-width: 254px;
+    }
+}
+
+.swiper-wrapper-hotel {
+    max-height: 194px;
+
+    @media screen and (min-width:1280px) {
+        min-height: 254px;
     }
 }
