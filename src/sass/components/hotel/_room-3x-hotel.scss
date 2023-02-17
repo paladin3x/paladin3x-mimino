@@ -326,3 +326,30 @@
         min-height: 254px;
     }
 }
+
+.swiper-hotel-revers {
+    margin-left: 0;
+    margin-top: 32px;
+}
+
+.hotel-swiper-btn-box-revers {
+    display: flex;
+    justify-content: start;
+
+    @media screen and (min-width: 1024px) {
+        justify-content: end;
+    }
+}
+
+.block-tablet-reverse {
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.swiper-wrapper-revers {
+    @media screen and (max-width: 1024px) {
+        margin-left: 80px;
+    }
+}
